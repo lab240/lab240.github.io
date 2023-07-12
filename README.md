@@ -1,63 +1,41 @@
-# Команда lab240
+# Website
 
-Лаборатория занимается исследованиями и созданием продуктов в области электроники, сетей, Linux, embedded, iot, автоматизации. 
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-Работаем с чипами и сборками RockChip, NXP, BroadCom, RAK.
+### Installation
 
-Глубоко и широко пилим Linux, готовим ядра, рецепты, загрузчики, сетевую систему. Работаем с DPDK и разрабатываем свой протокол на основе DPDK.
+```
+$ yarn
+```
 
-Проектируем и реализовываем свой вариант SDN сети с zeroconf.
+### Local Development
 
-Проектируем в Компас, Altium Designer, easyEDA. 
+```
+$ yarn start
+```
 
-Пишем документацию в ЕСКД (когда заставляют)
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-## Люди
+### Build
 
-Распределенная команда специалистов. 
+```
+$ yarn build
+```
 
-- Группа схемотехников (+тимлид)
-- Группа сетевых инженеров (+тимлид)
-- Группа подготовки и выпуска документации (+тимлид)
-- Проектировщик-конструктор
-- Девопс
-- Логистик
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-У нас нет менеджеров =)
+### Deployment
 
-## Портфолио. Электроника.
+Using SSH:
 
-- Процессорный модуль [NAPI](https://github.com/dmnovikov/napiguide/blob/main/readmeNapi.md) на основе Rockchip RK3308
+```
+$ USE_SSH=true yarn deploy
+```
 
-- Система сбора данных ["Сборщик-компакт"](https://github.com/dmnovikov/napiguide/blob/main/frontcontrolcompact.md) на основе Napi
+Not using SSH:
 
-- Система сбора данных ["ТокоСборщик"](https://github.com/dmnovikov/napiguide/blob/main/readmeNapiFrontControl.md) на основе Napi
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
 
--  Промышленный коммутатор [FrontNet](https://github.com/dmnovikov/napiguide/blob/main/frontnet-l2.md) на основе ASIC Broadcom Avenger.
-
--  Система передачи данных по беспроводным сетям 802.11ad (частичное участие) на основе nxp ls1046
-  
-- Система роутинга движущегося объекта на основе nxp lx2160 
-
-## Портфолио. Проектирование.
-
-- Проектирование пассивного корпуса для плат Байкал, Эльбрус
-  
-- Корпусирование коммутатора FrontNet
-
-[Frontenet case image](img1/l2-1.png)
-  
-- Корпусирование системы сбора данных "Сборщик"
-- 
-[Frontenet case image](img1/l2-1.png)
-
-## Портфолио. Программные разработки.
-
-- NapiLinux - дистрибутив Linux для встраиваемых систем (на основе системы сборки Yocto) 
-  
-- Веб интерфейс "Токосборщик" (система статистики на основе influx и grafana)
-  
-- FrontNet Lora connect - система передачи данных через LoraWan сеть с резервированием данных на основе ChirpStack
-  
-- Flear path protocol - роутинг движущегося объекта на основе Linux и DPDK
-  
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

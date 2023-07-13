@@ -29,7 +29,24 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'ru',
-    locales: ['ru'],
+    locales: ['ru', 'en'],
+    path: 'i18n',
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        calendar: 'gregory',
+        path: 'en',
+      },
+      ru: {
+        label: 'Русский',
+        direction: 'ltr',
+        htmlLang: 'ru-RU',
+        calendar: 'gregory',
+        path: 'ru',
+      },
+    },
   },
 
   presets: [
@@ -42,14 +59,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/lab240/lab240.github.io/blob/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/lab240/lab240.github.io/blob/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -71,7 +88,17 @@ const config = {
   ],
 
   plugins: [
-    require.resolve('docusaurus-plugin-image-zoom')
+    require.resolve('docusaurus-plugin-image-zoom'),
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false,
+      },
+    ],
   ],
 
   themeConfig:
@@ -88,6 +115,21 @@ const config = {
           }
         }
       },
+      // Theme dark/light mode config
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
+      // announcementBar: {
+      //   id: 'support_us',
+      //   content:
+      //     'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+      //   backgroundColor: '#fafbfc',
+      //   textColor: '#091E42',
+      //   isCloseable: false,
+      // },
+
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -96,6 +138,8 @@ const config = {
         //   alt: 'Lab240 Logo',
         //   src: 'img/logo.svg',
         // },
+        // style: 'primary',
+        hideOnScroll: false,
         items: [
           {
             type: 'docSidebar',
@@ -104,6 +148,10 @@ const config = {
             label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'localeDropdown',
+            position: 'right',            
+          },
           {
             href: 'https://github.com/lab240',
             // label: 'GitHub',
@@ -156,7 +204,7 @@ const config = {
         //     ],
         //   },
         // ],
-        copyright: `Copyright © ${new Date().getFullYear()} Lab240 Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Lab240 Сделано на Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

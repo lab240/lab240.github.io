@@ -52,12 +52,9 @@ tags: [team, lab240]
   
 - Корпусирование коммутатора FrontNet
 
-[Frontenet case image](img/l2-1.png)
+[Frontenet case image](./img/l2-1.png)
   
 - Корпусирование системы сбора данных "Сборщик"
--
-
-[Frontenet case image](img/l2-1.png)
 
 ## Портфолио. Программные разработки
 

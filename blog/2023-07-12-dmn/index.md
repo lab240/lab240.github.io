@@ -5,6 +5,9 @@ authors: dmn
 tags: [team, lab240]
 ---
 
+import Image from '@theme/IdealImage';
+import thumbnail from './img/l2-1.png';
+
 # Команда lab240
 
 Лаборатория занимается исследованиями и созданием продуктов в области электроники, сетей, Linux, embedded, iot, автоматизации.
@@ -52,7 +55,7 @@ tags: [team, lab240]
   
 - Корпусирование коммутатора FrontNet
 
-[Frontenet case image](./img/l2-1.png)
+<Image img={thumbnail} />
   
 - Корпусирование системы сбора данных "Сборщик"
 

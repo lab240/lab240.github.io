@@ -77,8 +77,10 @@ const config = {
   
   themes: [
     [
+      // @ts-ignore
       require.resolve("@easyops-cn/docusaurus-search-local"),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      // @ts-ignore
       ({
         hashed: true,
         language: ["en", "ru"],
@@ -94,8 +96,8 @@ const config = {
       {
         quality: 70,
         max: 1030, // max resized image's size.
-        min: 640, // min resized image's size. if original is lower, use that size.
-        steps: 2, // the max number of images generated between min and max (inclusive)
+        min: 480, // min resized image's size. if original is lower, use that size.
+        steps: 4, // the max number of images generated between min and max (inclusive)
         disableInDev: false,
       },
     ],
@@ -133,11 +135,12 @@ const config = {
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Lab240',
-        // logo: {
-        //   alt: 'Lab240 Logo',
-        //   src: 'img/logo.svg',
-        // },
+        // title: 'Lab240',
+        logo: {
+          alt: 'Lab240 Logo',
+          src: 'img/logo.png',
+          srcDark: 'img/logo_dark.png',
+        },
         // style: 'primary',
         hideOnScroll: false,
         items: [
@@ -204,7 +207,7 @@ const config = {
         //     ],
         //   },
         // ],
-        copyright: `Copyright © ${new Date().getFullYear()} Lab240 Сделано на Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Lab240 Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

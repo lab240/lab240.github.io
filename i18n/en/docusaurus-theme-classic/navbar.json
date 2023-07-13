@@ -1,8 +1,4 @@
 {
-  "title": {
-    "message": "Lab240",
-    "description": "The title in the navbar"
-  },
   "item.label.Docs": {
     "message": "Docs",
     "description": "Navbar item with label Docs"
@@ -10,5 +6,9 @@
   "item.label.Blog": {
     "message": "Blog",
     "description": "Navbar item with label Blog"
+  },
+  "logo.alt": {
+    "message": "Lab240 Logo",
+    "description": "The alt text of navbar logo"
   }
 }

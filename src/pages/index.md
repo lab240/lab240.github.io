@@ -1,7 +1,9 @@
 ---
-title: Markdown page example
+title: my hello page title
+description: my hello page description
+hide_table_of_contents: true
 ---
 
-# Markdown page example
+# Hello
 
-You don't need React to write simple standalone pages.
+How are you?

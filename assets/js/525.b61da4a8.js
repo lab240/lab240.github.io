@@ -1,0 +1,1 @@
+(self.webpackChunklab_240=self.webpackChunklab_240||[]).push([[525],{5525:()=>{}}]);

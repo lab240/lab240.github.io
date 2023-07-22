@@ -10,5 +10,5 @@ sidebar_position: 4
   
 - FrontNet Lora connect - система передачи данных через LoraWan сеть с резервированием данных на основе ChirpStack
   
-- Flear path protocol - роутинг движущегося объекта на основе Linux и DPDK
+- "Flear path protocol" - роутинг движущегося объекта на основе Linux и DPDK
   

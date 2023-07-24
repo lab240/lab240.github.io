@@ -2,11 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lab240.github.io/blog</id>
     <title>Lab240 Blog</title>
-    <updated>2023-07-12T00:00:00.000Z</updated>
+    <updated>2023-07-24T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lab240.github.io/blog"/>
     <subtitle>Lab240 Blog</subtitle>
     <icon>https://lab240.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Наша команда пилит...]]></title>
+        <id>https://lab240.github.io/blog/dmn-prj-elva1-1</id>
+        <link href="https://lab240.github.io/blog/dmn-prj-elva1-1"/>
+        <updated>2023-07-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Передача данных подвижного объекта]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="передача-данных-подвижного-объекта">Передача данных подвижного объекта<a href="#передача-данных-подвижного-объекта" class="hash-link" aria-label="Прямая ссылка на Передача данных подвижного объекта" title="Прямая ссылка на Передача данных подвижного объекта">​</a></h2><p>В большом проекте по обеспечению надежной высокоскоростной (10Гбит)
+связью "поезд-земля", наша команда отвечает за передачу данных.</p><blockquote><p><a href="https://habr.com/ru/articles/739496/" target="_blank" rel="noopener noreferrer">Сатья</a> на Хабре про технологию "поезд-земля" и сравнение ее с wifi и LTE.</p></blockquote><blockquote><p><a href="https://www.youtube.com/watch?v=t48YXALtb-M" target="_blank" rel="noopener noreferrer">Ролик</a> на Youtube</p></blockquote><p>Мы разрабатываем систему передачи данных через
+радиорелейную связь подвижного объекта (поезд) на
+высоких скоростях (до 300км\ч).</p><p>Суть проекта в том, что на поезде стоит радио-релейное
+оборудование, которое "смотрит" вперед и назад. В каждый момент
+времени мы "видим" и "теряем" базовые станции впереди поезда и сзади поезда.</p><p>Наша задача - обеспечить непрерывный и полно-дуплексный поток
+данных 10Гбит, переключая маршрутизацию от базовой станции "впереди"
+к базовой станции "сзади" и обратно. </p><p>То есть, говоря сетевым языком нам надо переключать "дефаулт роут" потока 10Гбит
+примерно раз в 7 секунд максимально быстро (с минимальными потерями). </p><p>Беда стандартных протоколов в том, что переключения "дефаулт роутинга" очень медленное
+даже на мощных сетевых маршрутизаторах, а если мы начинаем пользоваться IP-стеком Linux -
+то получаем снижение скорости при роутинге 10Гбит и также переключение в районе 50мс. </p><p>В этом проекте мы применяем технологию DPDK и мощную платформу NXP LX2160. Мы разработали
+свой протокол, которые оптимизирован исключительно на эту задачу (ловить новые маршруты) При этом
+мы получаем скорость переключения роутинга в районе 1-2мсю </p><p>...статья пилится...</p>]]></content>
+        <author>
+            <name>dmn</name>
+            <uri>https://github.com/dmnovikov</uri>
+        </author>
+        <category label="team" term="team"/>
+        <category label="lab240" term="lab240"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[First post]]></title>
         <id>https://lab240.github.io/blog/dmn-init</id>

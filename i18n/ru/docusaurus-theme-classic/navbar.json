@@ -4,11 +4,11 @@
     "description": "The alt text of navbar logo"
   },
   "item.label.Docs": {
-    "message": "Документация",
+    "message": "Портфолио",
     "description": "Navbar item with label Docs"
   },
   "item.label.Blog": {
-    "message": "Блог",
+    "message": "Наш уютный блог",
     "description": "Navbar item with label Blog"
   }
 }

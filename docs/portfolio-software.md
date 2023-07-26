@@ -8,6 +8,8 @@ sidebar_position: 2
 
 ![NapiLinux logo](img1/logo-w.png)
 
+[Подробнее о NapiLinux]()
+
   
 ## Веб интерфейс "Токо-сборщик" (система статистики на основе influx и grafana)
 

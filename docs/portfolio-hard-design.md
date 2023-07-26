@@ -11,4 +11,3 @@ sidebar_position: 3
 ![FrontNet case image](img1/l2-1.png)
   
 - Корпусирование системы сбора данных "Сборщик"
-  

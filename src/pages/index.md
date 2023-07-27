@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 ## Комьюнити lab240
 
-![lab240 logo](img/lab240.png)
+![lab240 logo](../../static/img/logo2.png)
 
 Наше комьюнити занимается исследованиями и созданием продуктов в области электроники, сетей, Linux, embedded, iot, автоматизации.
 

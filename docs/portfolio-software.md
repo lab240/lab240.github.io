@@ -10,7 +10,7 @@ sidebar_position: 2
 
 [Подробнее о NapiLinux](https://github.com/dmnovikov/napiguide/blob/main/napilinux.md)
 
-## Веб интерфейс "Токо-сборщик" (система статистики на основе influx и grafana)
+## Веб интерфейс "Токосборщик" (система статистики на основе influx и grafana)
 
 ![front-web](img1/front-web-4.png)
   
@@ -18,4 +18,4 @@ sidebar_position: 2
 
 - FrontNet Lora connect - система передачи данных через LoraWan сеть с резервированием данных на основе ChirpStack
   
-- "Flear path protocol" - роутинг движущегося объекта на основе Linux и DPDK
+- "Flea path protocol" - роутинг движущегося объекта на основе Linux и DPDK

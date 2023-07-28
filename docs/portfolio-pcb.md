@@ -16,8 +16,6 @@ sidebar_position: 2
 
 - Система сбора данных ["ТокоСборщик"](https://github.com/dmnovikov/napiguide/blob/main/readmeNapiFrontControl.md) на основе Napi
 
-- Промышленный коммутатор [FrontNet](https://github.com/dmnovikov/napiguide/blob/main/frontnet-l2.md) на основе ASIC Broadcom Avenger.
+![Alt text](img-napi-altium/3-1.png)
 
-- Система передачи данных по беспроводным сетям 802.11ad (частичное участие) на основе nxp ls1046
-  
-- Система роутинга движущегося объекта на основе nxp lx2160
+- Промышленный коммутатор [FrontNet](https://github.com/dmnovikov/napiguide/blob/main/frontnet-l2.md) на основе ASIC Broadcom Avenger.

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunklab_240=self.webpackChunklab_240||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"\u041d\u0430\u0448\u0430 \u043a\u043e\u043c\u0430\u043d\u0434\u0430 \u043f\u0438\u043b\u0438\u0442...","permalink":"/en/blog/dmn-prj-elva1-1"},{"title":"Team","permalink":"/en/blog/dmn-init"}]}')}}]);

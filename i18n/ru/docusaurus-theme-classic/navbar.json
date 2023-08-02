@@ -8,7 +8,7 @@
     "description": "Navbar item with label Docs"
   },
   "item.label.Blog": {
-    "message": "Наш уютный блог",
+    "message": "Летопись Lab240",
     "description": "Navbar item with label Blog"
   }
 }

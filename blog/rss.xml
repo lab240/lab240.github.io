@@ -4,12 +4,22 @@
         <title>Lab240 Blog</title>
         <link>https://lab240.github.io/blog</link>
         <description>Lab240 Blog</description>
-        <lastBuildDate>Mon, 24 Jul 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 10 Aug 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ru</language>
         <item>
-            <title><![CDATA[Передача данных подвижного объекта "поезд-земля"]]></title>
+            <title><![CDATA[Поднимаем плату на nxp ls1046 (заметка)]]></title>
+            <link>https://lab240.github.io/blog/hard-1046-start</link>
+            <guid>https://lab240.github.io/blog/hard-1046-start</guid>
+            <pubDate>Thu, 10 Aug 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Тяжёлый запуск новой платы, сложный процессор и протоколы запуска. Но мы понемногу движемся к стабилизации процедуры старта и описанию периферии.]]></description>
+            <content:encoded><![CDATA[<p>Тяжёлый запуск новой платы, сложный процессор и протоколы запуска. Но мы понемногу движемся к стабилизации процедуры старта и описанию периферии. </p><p><img loading="lazy" src="/assets/images/dok-ls1046-1423dc7764aee22101291220be676f1f.jpg" width="960" height="540" class="img_ev3q"></p><p>Процессор nxp ls1046, память ddr4, сеть 10gb, 3x pci-e. Плата будет базовым роутером для сетей 802.11ad в диапазоне 60ГГц. </p><p>К сожалению, плата  сильно отличается от nxp devboard ls1046-ardb, поэтому конфигурации и деревья устройств упали на нас. Там конечно свой космос на стыке железа и конфигурации загрузчиков, чтобы объяснить загрузчикам Линуксу что там вообще есть. </p><p>Для примера, прежде чем запустить загрузку Линукс есть 5 стадий загрузчика и uboot. Позже опубликуем некоторые аспекты загрузки этой платы (BL1...3, TF-A).</p><p>:wq</p>]]></content:encoded>
+            <category>team</category>
+            <category>lab240</category>
+        </item>
+        <item>
+            <title><![CDATA[Передача данных "поезд-земля" (статья)]]></title>
             <link>https://lab240.github.io/blog/dmn-prj-elva1-1</link>
             <guid>https://lab240.github.io/blog/dmn-prj-elva1-1</guid>
             <pubDate>Mon, 24 Jul 2023 00:00:00 GMT</pubDate>

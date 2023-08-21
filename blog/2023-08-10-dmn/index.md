@@ -1,6 +1,6 @@
 ---
 slug: hard-1046-start
-title: Поднимаем плату на nxp ls1046 (заметка)
+title: Поднимаем плату на nxp ls1046 (жизнь)
 authors: dmn
 tags: [team, lab240]
 ---

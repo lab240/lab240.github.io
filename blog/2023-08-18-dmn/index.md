@@ -8,7 +8,7 @@ tags: [team, lab240]
 :::note
 
 *) Статья не совсем готова, ссылки могут и скорее всего не
-работают. Как все будет готово, снимем эту плашку. 
+работают. Как все будет готово, снимем эту плашку.
 
 :::
 
@@ -31,11 +31,11 @@ ATS-1204"](https://www.elemy.ru/products/ats-1204).
 
 :::tip
 
-Докер для Win: https://www.docker.com/products/docker-desktop/
+Докер для Win: <https://www.docker.com/products/docker-desktop/>
 
 :::
 
-Наш готовый докер с инструкцией по разворачиванию  https://gitlab.nnz-ipc.net/iot/grafana-influx
+Наш готовый докер с инструкцией по разворачиванию  <https://gitlab.nnz-ipc.net/iot/grafana-influx>
 
 ## Конфиг telegraf
 
@@ -82,6 +82,7 @@ Telegraf - мощнейшее средство перекладывания да
   user_agent = "telegraf"
 
 ```
+
 ## Дашбоард для grafana
 
 > [Cкачать json c дашбоард для  Elemy ATS-1204](./files/ATS-1204-1692355913043.json)

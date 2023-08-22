@@ -42,13 +42,43 @@ Modbus TCP
 
 ```
 
-Modbus rtu 
+Modbus rtu (на примере датчика окружающей среды IPCDAS FS-C1)
 
 ```toml Modbus RTU
 
+## FrontSensor C1 Шаблон для встроенного датчика тока
+[[inputs.modbus]]
+
+  name = "FS-C1"
+  slave_id = 1
+  timeout = "10s"
+
+  # busy_retries = 0
+  # busy_retries_wait = "100ms"
+
+  controller = "file:///dev/ttyS1"
+  baud_rate = 9600
+  data_bits = 8
+  parity = "N"
+  stop_bits = 1
+  transmission_mode = "RTU"
+
+  holding_registers = [
+    { name = "Volt_a",   byte_order = "AB",   data_type = "UINT16",   scale=0.01,     address = [72]},
+    { name = "Amp_a",    byte_order = "AB",   data_type = "UINT16",   scale=1.0,      address = [73]},
+    { name = "W_a",      byte_order = "AB",   data_type = "UINT16",   scale=1.0,      address = [74]},
+    { name = "PF_a",     byte_order = "AB",   data_type = "UINT16",   scale=1.0,      address = [77]},
+    { name = "Freq_a",   byte_order = "AB",   data_type = "UINT16",   scale=0.01,     address = [81]},
+    { name = "Freq_b",   byte_order = "AB",   data_type = "UINT16",   scale=0.01,     address = [81]},
+    { name = "Freq_c",   byte_order = "AB",   data_type = "UINT16",   scale=0.01,     address = [81]},
+    { name = "Freq_d",   byte_order = "AB",   data_type = "UINT16",   scale=0.01,     address = [81]},
+    { name = "Freq_e",   byte_order = "AB",   data_type = "UINT16",   scale=0.01,     address = [81]},
+    { name = "Freq_f",   byte_order = "AB",   data_type = "UINT16",   scale=0.01,     address = [81]},
+  ]
+
 ```
 
-MQTT Config
+MQTT Config (на примере платформы donoff    )
 
 ```toml
 

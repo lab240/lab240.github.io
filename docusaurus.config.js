@@ -156,6 +156,20 @@ const config = {
             position: 'right',            
           },
           {
+            label: 'Tools',
+            position: 'left',
+            items: [
+              {
+                label: '1046 rcw hex to bin',
+                to: '/1046hextobin'
+              },
+              {
+                label: 'CPU chart',
+                to: '/cpuChart'
+              },
+            ],
+          },
+          {
             href: 'https://github.com/lab240',
             // label: 'GitHub',
             position: 'right',

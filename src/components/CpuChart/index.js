@@ -3,7 +3,22 @@ import Chart from './chart.js';
 
 const ChartComponent = () => {
   const [chartCreated, setChartCreated] = useState(false);
-
+  const [demoData, setDemoData] = useState(`{"cpu":[
+  {"timestamp":1692713925, "frequency":3219.181, "temperature":61.0},
+  {"timestamp":1692713926, "frequency":2740.720, "temperature":59.0},
+  {"timestamp":1692713927, "frequency":1705.188, "temperature":61.0},
+  {"timestamp":1692713928, "frequency":3010.267, "temperature":68.0},
+  {"timestamp":1692713929, "frequency":1500.000, "temperature":59.0},
+  {"timestamp":1692713930, "frequency":1500.000, "temperature":58.0},
+  {"timestamp":1692713931, "frequency":3860.388, "temperature":58.0},
+  {"timestamp":1692713932, "frequency":457.516, "temperature":59.0},
+  {"timestamp":1692713933, "frequency":1500.000, "temperature":59.0},
+  {"timestamp":1692713934, "frequency":1500.000, "temperature":57.0}
+]}`);
+  const loadDemoData = () => {
+    document.getElementById('jsonData').value = demoData;
+    createChart();
+  };
   const createChart = () => {
     if (!chartCreated) {
       const jsonDataInput = document.getElementById('jsonData');
@@ -93,8 +108,12 @@ const ChartComponent = () => {
               ]}
               '
             ></textarea>
+            <br/>
+            <button id="loadDemoDataButton" onClick={loadDemoData}>
+              Demo
+            </button>
             <button id="createGraphButton" onClick={createChart}>
-            Build Graph
+              Graph it!
             </button>
         </div>
       <canvas id="cpuChart"></canvas>

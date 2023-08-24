@@ -3,7 +3,9 @@ import Chart from './chart.js';
 
 const ChartComponent = () => {
   const [chartCreated, setChartCreated] = useState(false);
-  const [demoData, setDemoData] = useState(`{"cpu":[
+  const [demoData, setDemoData] = useState(`{ "SN": "SN0001",
+  "note": "This is a note",
+  "cpu":[
   {"timestamp":1692713925, "frequency":3219.181, "temperature":61.0},
   {"timestamp":1692713926, "frequency":2740.720, "temperature":59.0},
   {"timestamp":1692713927, "frequency":1705.188, "temperature":61.0},
@@ -24,6 +26,28 @@ const ChartComponent = () => {
       const jsonDataInput = document.getElementById('jsonData');
       const jsonData = JSON.parse(jsonDataInput.value);
 
+      const serialNumber = jsonData.SN;
+
+      const noteData = () => {
+        if (jsonData.note) {
+          return `, Note: ${jsonData.note}`;
+        } else {
+          return '';
+        }
+      };
+
+      const dateLog = (jsonData) => {
+        const firstEntry = jsonData.cpu[0];
+        const firstTimestamp = new Date(firstEntry.timestamp * 1000);
+        const year = firstTimestamp.getFullYear();
+        const month = String(firstTimestamp.getMonth() + 1).padStart(2, '0');
+        const day = String(firstTimestamp.getDate()).padStart(2, '0');
+        const hours = String(firstTimestamp.getHours()).padStart(2, '0');
+        const minutes = String(firstTimestamp.getMinutes()).padStart(2, '0');
+        const seconds = String(firstTimestamp.getSeconds()).padStart(2, '0');
+        return `${year}/${month}/${day} ${hours}:${minutes}:${seconds}`;
+      };
+
       const timestamps = jsonData.cpu.map(entry => {
         const date = new Date(entry.timestamp * 1000);
         const hours = String(date.getHours()).padStart(2, '0');
@@ -33,6 +57,8 @@ const ChartComponent = () => {
       });
       const frequencies = jsonData.cpu.map(entry => entry.frequency);
       const temperatures = jsonData.cpu.map(entry => entry.temperature);
+      const formattedFirstTimestamp = dateLog(jsonData);
+      const note = noteData();
 
       const ctx = document.getElementById('cpuChart').getContext('2d');
       new Chart(ctx, {
@@ -57,6 +83,12 @@ const ChartComponent = () => {
           ],
         },
         options: {
+          plugins: {
+            title: {
+              display: true,
+              text: `Serial Number: ${serialNumber}, Date: ${formattedFirstTimestamp}${note}`
+            },
+          },
           scales: {
             x: {},
             frequency: {
@@ -94,19 +126,6 @@ const ChartComponent = () => {
             id="jsonData"
             rows="5"
             cols='46'
-            placeholder='{"cpu":[
-                {"timestamp":1692713925, "frequency":3219.181, "temperature":61.0},
-                {"timestamp":1692713926, "frequency":2740.720, "temperature":59.0},
-                {"timestamp":1692713927, "frequency":1705.188, "temperature":61.0},
-                {"timestamp":1692713928, "frequency":3010.267, "temperature":68.0},
-                {"timestamp":1692713929, "frequency":1500.000, "temperature":59.0},
-                {"timestamp":1692713930, "frequency":1500.000, "temperature":58.0},
-                {"timestamp":1692713931, "frequency":3860.388, "temperature":58.0},
-                {"timestamp":1692713932, "frequency":457.516, "temperature":59.0},
-                {"timestamp":1692713933, "frequency":1500.000, "temperature":59.0},
-                {"timestamp":1692713934, "frequency":1500.000, "temperature":57.0}
-              ]}
-              '
             ></textarea>
             <br/>
             <button id="loadDemoDataButton" onClick={loadDemoData}>

@@ -72,6 +72,9 @@ const ChartComponent = () => {
               borderColor: 'blue',
               backgroundColor: 'rgba(0, 0, 255, 0.2)',
               data: frequencies,
+              pointStyle: 'circle',
+              pointRadius: 5,
+              pointHoverRadius: 10,
             },
             {
               label: 'CPU temperature',
@@ -79,15 +82,24 @@ const ChartComponent = () => {
               borderColor: 'red',
               backgroundColor: 'rgba(255, 0, 0, 0.2)',
               data: temperatures,
+              pointStyle: 'circle',
+              pointRadius: 5,
+              pointHoverRadius: 10
             },
           ],
         },
         options: {
+          responsive: true,
           plugins: {
             title: {
               display: true,
               text: `Serial Number: ${serialNumber}, Date: ${formattedFirstTimestamp}${note}`
             },
+          },
+          stacked: false,
+          interaction: {
+            mode: 'index',
+            intersect: false,
           },
           scales: {
             x: {},
@@ -102,6 +114,9 @@ const ChartComponent = () => {
             temperature: {
               alignToPixels: true,
               position: 'right',
+              grid: {
+                drawOnChartArea: false,
+              },
               title: {
                 display: true,
                 text: 'Temperature',

@@ -1,3 +1,9 @@
+/**
+ * @author Igor Kha <mashinkopochinko@gmail.com>
+ * @date 2023-08-24
+ * @description Component for displaying a graph of the frequency and temperature of the processor
+ */
+
 import React, { useState } from 'react';
 import Chart from './chart.js';
 
@@ -35,7 +41,7 @@ const ChartComponent = () => {
 
       const noteData = () => {
         if (jsonData.note) {
-          return `, Note: ${jsonData.note}`;
+          return `Note: ${jsonData.note}`;
         } else {
           return '';
         }
@@ -64,7 +70,7 @@ const ChartComponent = () => {
       const temperatures = jsonData.cpu.map(entry => entry.temperature);
       const formattedFirstTimestamp = dateLog(jsonData);
       const note = noteData();
-
+      
       const ctx = document.getElementById('cpuChart').getContext('2d');
       setChartInstance(new Chart(ctx, {
         type: 'line',
@@ -74,8 +80,8 @@ const ChartComponent = () => {
             {
               label: 'CPU frequency',
               yAxisID: 'frequency',
-              borderColor: 'blue',
-              backgroundColor: 'rgba(0, 0, 255, 0.2)',
+              // borderColor: 'blue',
+              // backgroundColor: 'rgba(0, 0, 255, 0.2)',
               data: frequencies,
               pointStyle: 'circle',
               pointRadius: 5,
@@ -84,8 +90,8 @@ const ChartComponent = () => {
             {
               label: 'CPU temperature',
               yAxisID: 'temperature',
-              borderColor: 'red',
-              backgroundColor: 'rgba(255, 0, 0, 0.2)',
+              // borderColor: 'red',
+              // backgroundColor: 'rgba(255, 0, 0, 0.2)',
               data: temperatures,
               pointStyle: 'circle',
               pointRadius: 5,
@@ -98,8 +104,15 @@ const ChartComponent = () => {
           plugins: {
             title: {
               display: true,
-              text: `Serial Number: ${serialNumber}, Date: ${formattedFirstTimestamp}${note}`
+              text: `Serial Number: ${serialNumber}, Date: ${formattedFirstTimestamp}`
             },
+            subtitle: {
+              display: true,
+              text: `${note}`
+            },
+          },
+          layout: {
+            autoPadding: true
           },
           stacked: false,
           interaction: {

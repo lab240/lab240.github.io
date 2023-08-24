@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Chart from './chart.js';
 
 const ChartComponent = () => {
+  const [chartInstance, setChartInstance] = useState(null);
   const [chartCreated, setChartCreated] = useState(false);
   const [demoData, setDemoData] = useState(`{ "SN": "SN0001",
   "note": "This is a note",
@@ -22,6 +23,10 @@ const ChartComponent = () => {
     createChart();
   };
   const createChart = () => {
+    if (chartInstance) {
+      chartInstance.destroy(); // Уничтожить предыдущий график, если он существует
+    }
+    setChartCreated(false);
     if (!chartCreated) {
       const jsonDataInput = document.getElementById('jsonData');
       const jsonData = JSON.parse(jsonDataInput.value);
@@ -61,7 +66,7 @@ const ChartComponent = () => {
       const note = noteData();
 
       const ctx = document.getElementById('cpuChart').getContext('2d');
-      new Chart(ctx, {
+      setChartInstance(new Chart(ctx, {
         type: 'line',
         data: {
           labels: timestamps,
@@ -124,9 +129,7 @@ const ChartComponent = () => {
             },
           },
         },
-      });
-
-      setChartCreated(true);
+      }));
     }
   };
 

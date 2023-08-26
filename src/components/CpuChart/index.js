@@ -84,8 +84,8 @@ const ChartComponent = () => {
               // backgroundColor: 'rgba(0, 0, 255, 0.2)',
               data: frequencies,
               pointStyle: 'circle',
-              pointRadius: 5,
-              pointHoverRadius: 10,
+              // pointRadius: 0,
+              pointHoverRadius: 8,
             },
             {
               label: 'CPU temperature',
@@ -94,8 +94,8 @@ const ChartComponent = () => {
               // backgroundColor: 'rgba(255, 0, 0, 0.2)',
               data: temperatures,
               pointStyle: 'circle',
-              pointRadius: 5,
-              pointHoverRadius: 10
+              // pointRadius: 0,
+              pointHoverRadius: 8,
             },
           ],
         },

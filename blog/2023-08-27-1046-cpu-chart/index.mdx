@@ -10,7 +10,7 @@ import main from './img/header.png';
 
 <Image img={main} />
 
-Всем привет! В этот раз я немного расскажу про то, как мы организовали процесс сбора данных о частоте и температуре процессора без использования дополнительного программного обеспечения на базе сборки Yocto. Мы расскажем о том, как собрали данные при помощи ~~своего велосипеда~~ bash-скрипта, чтобы дополнительно не нагружать систему и как визуализировали их с использованием нашего небольшого веб-сервиса.
+Всем привет! В этот раз я немного расскажу про то, как мы организовали процесс сбора данных о частоте и температуре процессора LS1046a без использования дополнительного программного обеспечения на базе сборки Yocto. Мы расскажем о том, как собрали данные при помощи ~~своего велосипеда~~ bash-скрипта, чтобы дополнительно не нагружать систему и как визуализировали их с использованием нашего небольшого веб-сервиса.
 
 <!--truncate-->
 
@@ -45,6 +45,74 @@ import main from './img/header.png';
 - Создание и форматирование JSON-файла.
 - Основной цикл сбора данных и записи их в JSON.
 
+### Готовый скрипт
+
+```bash title="Bash-script для ls1046a"
+#!/bin/bash
+
+if [ $# -lt 2 ]; then
+  echo "Usage: $0 <serial_number> <duration_in_seconds> <note>"
+  echo "note: optional parameter"
+  echo "Example: $0 SN0001 10 \"Test 1\""
+  exit 1
+fi
+
+serialnumber="$1"
+duration="$2"
+note="$3"
+
+
+get_current_time() {
+  current_time=$(date +"%D %H:%M:%S")
+  echo "$current_time"
+}
+
+get_timestamp() {
+  date +%s
+}
+
+get_cpu_frequency() {
+  cat /sys/devices/system/cpu/cpufreq/policy0/cpuinfo_cur_freq
+}
+
+get_cpu_temperature() {
+  val=$(cat /sys/class/hwmon/hwmon3/temp1_input)
+  result=$(echo "scale=2; $val / 1000.0" | bc)
+  printf "%.2f\n" "$result"
+}
+
+echo "Collecting data for $duration seconds..."
+
+json_file="cpu_data.json"
+
+echo '{"SN": "'"$serialnumber"'",' > "$json_file"
+if [ -n "$note" ]; then
+  echo '  "note": "'"$note"'",' >> "$json_file"
+fi
+echo '  "cpu":[' >> "$json_file"
+
+end_time=$((SECONDS + duration))
+while [ $SECONDS -lt $end_time ]; do
+  timestamp=$(get_timestamp)
+  frequency=$(get_cpu_frequency)
+  temperature=$(get_cpu_temperature)
+
+  get_current_time
+  echo "CPU Frequency: ${frequency} Hz"
+  echo "Core Temperature: ${temperature}"
+
+  echo "  {\"timestamp\":$timestamp, \"frequency\":$frequency, \"temperature\":$temperature}," >> "$json_file"
+
+  sleep 1
+done
+
+sed -i '$ s/,$//' "$json_file"
+echo ']}' >> "$json_file"
+echo ''
+echo "Done! Data written to $json_file"
+
+```
+
 **Пример формируемого json файла нашим скриптом:**
 
 ```json title="cpu_data.json"
@@ -72,7 +140,7 @@ import main from './img/header.png';
 
 ## Заключение
 
-В данной статье мы рассмотрели, как решить задачу сбора данных о частоте и температуре процессора без установки дополнительного программного обеспечения. Мы использовали bash-скрипт для сбора данных и веб-сервис для их визуализации, который к слову, тоже написан нами. Этот подход позволил нам решить нашу задачу по анализу и мониторингу процессора LS1046a во время проводимых нагрузочных тестирования. Надеюсь эта информация будет кому-то полезна.
+В данной статье мы рассмотрели, как решить задачу сбора данных о частоте и температуре процессора без установки дополнительного программного обеспечения. Мы использовали bash-скрипт для сбора данных и веб-сервис для их визуализации, который к слову, тоже написан нами. Этот подход позволил нам решить нашу задачу по анализу и мониторингу процессора LS1046a во время проводимых нагрузочных тестирований. Надеюсь эта информация будет кому-то полезна.
 
 ## Полезные ссылки
 

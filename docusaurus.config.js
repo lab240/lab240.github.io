@@ -101,6 +101,11 @@ const config = {
         disableInDev: false,
       },
     ],
+    ['docusaurus-plugin-yandex-metrica', {
+      counterID: '95068321',
+      enableInProdOnly: true,
+      webvisor: true,
+    }],
   ],
 
   themeConfig:

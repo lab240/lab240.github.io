@@ -4,10 +4,20 @@
         <title>Lab240 Blog</title>
         <link>https://lab240.github.io/blog</link>
         <description>Lab240 Blog</description>
-        <lastBuildDate>Sun, 10 Sep 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Oct 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ru</language>
+        <item>
+            <title><![CDATA[Сборщик-компакт. Первый взгляд.]]></title>
+            <link>https://lab240.github.io/blog/froncontrol-compact-first-view</link>
+            <guid>https://lab240.github.io/blog/froncontrol-compact-first-view</guid>
+            <pubDate>Fri, 20 Oct 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Первый взгляд на сигнальный образец Сборщик-Компакт.]]></description>
+            <content:encoded><![CDATA[<p>Первый взгляд на сигнальный образец Сборщик-Компакт. </p><p>Сначала была Napi</p><p><img loading="lazy" src="/assets/images/napi1-2ddde1dfaa0aa0001197f7bbc1fe00d0.png" width="219" height="178" class="img_ev3q"></p><p>Продолжение следует !</p>]]></content:encoded>
+            <category>napi</category>
+            <category>frontcontrol</category>
+        </item>
         <item>
             <title><![CDATA[Кейс с NAPI (сборщик-компакт)]]></title>
             <link>https://lab240.github.io/blog/elemy</link>

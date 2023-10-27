@@ -6,7 +6,7 @@ tags: [napi, napi-c, napi-p]
 
 Первый взгляд на процессорный модуль Napi C.
 
-![](img/napi0.png)
+![](img/napi0-1.png)
 
 ## Краткая предыстория
 

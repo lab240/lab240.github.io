@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunklab_240=self.webpackChunklab_240||[]).push([[9367],{8707:a=>{a.exports=JSON.parse('{"label":"napi-p","permalink":"/blog/tags/napi-p","allTagsPath":"/blog/tags","count":1}')}}]);

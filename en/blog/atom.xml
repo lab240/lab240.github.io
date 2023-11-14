@@ -2,11 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lab240.github.io/en/blog</id>
     <title>Lab240 Blog</title>
-    <updated>2023-11-07T00:00:00.000Z</updated>
+    <updated>2023-11-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lab240.github.io/en/blog"/>
     <subtitle>Lab240 Blog</subtitle>
     <icon>https://lab240.github.io/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Сборщик-универсал. Первый взгляд живьем.]]></title>
+        <id>https://lab240.github.io/en/blog/front-control-live-view</id>
+        <link href="https://lab240.github.io/en/blog/front-control-live-view"/>
+        <updated>2023-11-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Ранее мы представляли концепцию Сборщика, а сейчас готовы показать первый фотки. Это неофициальный сайт, поэтому можем позволить себе поделиться фотками с полей.]]></summary>
+        <content type="html"><![CDATA[<p>Ранее мы представляли концепцию Сборщика, а сейчас готовы показать первый фотки. Это неофициальный сайт, поэтому можем позволить себе поделиться фотками с полей. </p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="первый-взгляд-живьем">Первый взгляд "живьем"<a href="#первый-взгляд-живьем" class="hash-link" aria-label="Direct link to Первый взгляд &quot;живьем&quot;" title="Direct link to Первый взгляд &quot;живьем&quot;">​</a></h2><p>Вот такой первый экземпляр.</p><p><img loading="lazy" src="/en/assets/images/fc-l-1-f5e9919a2353991a9a8fa5b43c2fa0a3.png" width="534" height="298" class="img_ev3q"></p><p>С "колодкой" с интерфейсами.</p><p><img loading="lazy" src="/en/assets/images/fc-l-2-7dbd93efd7a803e41fe1d38efe68281a.png" width="539" height="345" class="img_ev3q"></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="сборщик-универсал-и-сборщик-компакт">Сборщик-универсал и Сборщик-компакт<a href="#сборщик-универсал-и-сборщик-компакт" class="hash-link" aria-label="Direct link to Сборщик-универсал и Сборщик-компакт" title="Direct link to Сборщик-универсал и Сборщик-компакт">​</a></h2><p>По толщине получились практически одинаковые устройства. </p><p><img loading="lazy" src="/en/assets/images/fc-l-3-19f3994a2470654055f78316c3f4134a.png" width="580" height="656" class="img_ev3q"></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="крепление-на-din">Крепление на DIN<a href="#крепление-на-din" class="hash-link" aria-label="Direct link to Крепление на DIN" title="Direct link to Крепление на DIN">​</a></h2><p>Ну и традиционно мы все хотим крепить на DIN рейку.</p><p><img loading="lazy" src="/en/assets/images/fc-l-4-d71bef7a399d1f66ee3c47ef6fc4099c.png" width="714" height="467" class="img_ev3q"></p>]]></content>
+        <category label="napi" term="napi"/>
+        <category label="frontcontrol" term="frontcontrol"/>
+        <category label="napi-p" term="napi-p"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Сборщик-универсал. Первый взгляд на концепт.]]></title>
         <id>https://lab240.github.io/en/blog/front-control-first-view</id>

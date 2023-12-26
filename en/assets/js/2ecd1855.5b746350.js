@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklab_240=self.webpackChunklab_240||[]).push([[788],{4472:a=>{a.exports=JSON.parse('{"label":"wifi6","permalink":"/en/blog/tags/wifi-6","allTagsPath":"/en/blog/tags","count":1}')}}]);

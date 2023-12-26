@@ -4,10 +4,20 @@
         <title>Lab240 Blog</title>
         <link>https://lab240.github.io/blog</link>
         <description>Lab240 Blog</description>
-        <lastBuildDate>Tue, 14 Nov 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 26 Dec 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>ru</language>
+        <item>
+            <title><![CDATA[Замеры скоростей WiFi6]]></title>
+            <link>https://lab240.github.io/blog/wifi6</link>
+            <guid>https://lab240.github.io/blog/wifi6</guid>
+            <pubDate>Tue, 26 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Тут скоро будет статья и много картинок]]></description>
+            <content:encoded><![CDATA[<p>Тут скоро будет статья и много картинок</p>]]></content:encoded>
+            <category>wifi6</category>
+            <category>dok</category>
+        </item>
         <item>
             <title><![CDATA[Сборщик-универсал. Первый взгляд живьем.]]></title>
             <link>https://lab240.github.io/blog/front-control-live-view</link>

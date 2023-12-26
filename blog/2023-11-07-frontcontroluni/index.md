@@ -1,6 +1,6 @@
 ---
 slug: front-control-first-view
-title: Сборщик-универсал. Первый взгляд на концепт.
+title: Сборщик-универсал. Концепт и конструктив.
 tags: [napi, frontcontrol, napi-p]
 ---
 

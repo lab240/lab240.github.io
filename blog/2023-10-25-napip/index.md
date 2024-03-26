@@ -6,6 +6,8 @@ tags: [napi, napi-c, napi-p]
 
 Первый взгляд на процессорный модуль Napi C.
 
+:warning: Про все продукты NAPI: https://napiworld.ru/
+
 ![](img/napi0-1.png)
 
 <!--truncate-->

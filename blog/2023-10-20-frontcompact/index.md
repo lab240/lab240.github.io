@@ -1,10 +1,12 @@
 ---
-slug: froncontrol-compact-first-view
+slug: frontcontrol-compact-first-view
 title: Сборщик-компакт. Первый взгляд.
 tags: [napi, frontcontrol, сборщик, сборщик-компакт]
 ---
 
 Первый взгляд на сигнальный образец Сборщик-Компакт. 
+
+:warning: Продукт готов, полное описание по ссылке: https://napiworld.ru/docs/computers/frontcontrol-compact/
 
 ![](img/cl0.png)
 

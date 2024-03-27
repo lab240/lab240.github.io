@@ -42,3 +42,8 @@ sidebar_position: 1
 ### Работа со службами Linux (systemd). На примере mbusd и telegraf.
 
 > Ссылка: https://napiworld.ru/software/notes/systemd/
+
+
+### Трудный подъем кастом-платы на NXP LS1046
+
+> Ссылка: https://lab240.github.io/blog/hard-1046-log-blog

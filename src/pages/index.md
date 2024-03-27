@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 ## Комьюнити lab240
 
-![lab240 logo](../../static/img/logo2.png)
+![lab240 logo](../../static/img/lab240-l.jpg)
 
 :::tip самое интересное
 

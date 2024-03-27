@@ -101,6 +101,15 @@ const config = {
         disableInDev: false,
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'reports',
+        path: 'reports',
+        routeBasePath: 'reports',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
     ['docusaurus-plugin-yandex-metrica', {
       counterID: '95068321',
       enableInProdOnly: true,

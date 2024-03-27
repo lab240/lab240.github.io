@@ -2,20 +2,49 @@
 sidebar_position: 2
 ---
 
-# Портфолио. Электроника.
+# Портфолио. Hardware.
 
-- Процессорный модуль [NAPI](https://github.com/dmnovikov/napiguide/blob/main/readmeNapi.md) на основе Rockchip RK3308
-  
-![Alt text](img-napi-altium/1-1.png)
+## Процессорный модуль NAPI C\P на основе Rockchip RK3308
 
-![Alt text](img-napi-altium/1-2.png)
+Ссылка: https://napiworld.ru/docs/napi-intro
 
-- Система сбора данных ["Сборщик-компакт"](https://github.com/dmnovikov/napiguide/blob/main/frontcontrolcompact.md) на основе Napi
+  ![Alt text](img-napi-altium/1-2.png)
 
-![Alt text](img-napi-altium/2-1.png)
+## Процессорный модуль NAPI S
 
-- Система сбора данных ["ТокоСборщик"](https://github.com/dmnovikov/napiguide/blob/main/readmeNapiFrontControl.md) на основе Napi
+Ссылка: https://napiworld.ru/docs/napi-intro
+
+![alt](img-s/napi-s-1.jpg)
+
+![alt](img-s/napi-s-2.jpg)
+
+![alt](img-s/napi-s-3.jpg)
+
+## Сборщик компакт
+
+Ссылка: https://napiworld.ru/docs/computers/frontcontrol-compact
+
+![alt](img-fcc/fcc1.jpg)
+
+![alt](img-fcc/fcc2.png)
+
+## Сборщик универсал
+
+Ссылка: https://napiworld.ru/docs/computers/frontcontrol-uni
+
+![](img-fcu/fcu1.jpg)
+
+![](img-fcc/fcc2.png)
+
+## Система сбора данных ["ТокоСборщик"] на основе Napi
+
+Ссылка: https://napiworld.ru/docs/special/frontcurrent
 
 ![Alt text](img-napi-altium/3-1.png)
 
-- Промышленный коммутатор [FrontNet](https://github.com/dmnovikov/napiguide/blob/main/frontnet-l2.md) на основе ASIC Broadcom Avenger.
+## Modbus стенд
+
+Ссылка: https://napiworld.ru/software/intructions/mbusstand/
+
+![alt](mbus/modbus-stand-1.jpg)
+

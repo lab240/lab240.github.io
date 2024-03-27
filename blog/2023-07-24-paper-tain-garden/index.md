@@ -1,5 +1,5 @@
 ---
-slug: dmn-prj-elva1-1
+slug: dmn-prj-fleapath-1
 title: Передача данных "поезд-земля" (статья)
 authors: dmn
 tags: [team, lab240]

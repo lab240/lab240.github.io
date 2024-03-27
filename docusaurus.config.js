@@ -155,7 +155,28 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          /*{
+            to: '/reports',
+            label: 'Reports',
+          },*/
+          {to: '/blog', label: 'Blog', position: 'left',
+          items: [
+            {
+              label: 'Лента новостей',
+              to: 'blog'
+            },
+            {
+              label: 'Все новости',
+              to: 'blog/archive'
+            },
+            
+            {
+              label: 'Новости по тегам',
+              to: 'blog/tags'
+            },
+          ],
+        
+          },
           {
             type: 'localeDropdown',
             position: 'right',            

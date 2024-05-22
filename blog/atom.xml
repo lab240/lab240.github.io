@@ -2,11 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lab240.github.io/blog</id>
     <title>Lab240 Blog</title>
-    <updated>2023-12-26T00:00:00.000Z</updated>
+    <updated>2024-05-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lab240.github.io/blog"/>
     <subtitle>Lab240 Blog</subtitle>
     <icon>https://lab240.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Стенд ModBus 2]]></title>
+        <id>https://lab240.github.io/blog/modbus-stand-2</id>
+        <link href="https://lab240.github.io/blog/modbus-stand-2"/>
+        <updated>2024-05-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Новое в железе ModbusStand 2.0]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="новое-в-железе-modbusstand-20">Новое в железе ModbusStand 2.0<a href="#новое-в-железе-modbusstand-20" class="hash-link" aria-label="Прямая ссылка на Новое в железе ModbusStand 2.0" title="Прямая ссылка на Новое в железе ModbusStand 2.0">​</a></h2><ul><li>Питание 4-40в;</li><li>Возможность отключить\включить каждый датчик;</li><li>Возможность "притянуть" Wemos\Шилду к плате через крепление</li><li>Все элементы подобраны под навесной монтаж (для самостоятельной сборки)</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="новое-в-софте">Новое в софте<a href="#новое-в-софте" class="hash-link" aria-label="Прямая ссылка на Новое в софте" title="Прямая ссылка на Новое в софте">​</a></h2><blockquote><p>Прошивка для Wemos: <a href="https://github.com/lab240/esp8266-modbus-stand/tree/dev1" target="_blank" rel="noopener noreferrer">https://github.com/lab240/esp8266-modbus-stand/tree/dev1</a>
+Утилиты тестирования, даш борда для Grafana, конфиги для Telegraf: <a href="https://github.com/lab240/modbus-stand-tools" target="_blank" rel="noopener noreferrer">https://github.com/lab240/modbus-stand-tools</a></p></blockquote><p>Открытая прошивка для Wemos позволяет</p><p>Скетч для среды Arduino IDE \ VC позволяет (настраивается без прошивки)</p><ul><li>Назначать Modbus адрес</li><li>Менять количество hold-регистров и coil-регистров</li><li>Менять скорость и параметры RS485 порта</li></ul><p>Заполнение регистров</p><ul><li>Hold-регистры заполняются следующим образом: <ul><li>1-й регистр - modbus адрес</li><li>2,3,4 - секунды, минуты, часы со старта</li><li>5 и далее - случайные числа от 1 до 320000</li></ul></li><li>Coil-регистры заполняются случайно (1 или 0)</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="как-выглядит-стенд">Как выглядит стенд<a href="#как-выглядит-стенд" class="hash-link" aria-label="Прямая ссылка на Как выглядит стенд" title="Прямая ссылка на Как выглядит стенд">​</a></h2><p>Новый стенд
+<img loading="lazy" src="/assets/images/photo_2024-05-22_14-32-09-80e9b8d028813da1303f3dd2691403b2.jpg" width="1280" height="720" class="img_ev3q"></p><p>Стенд 2.0 vs 1.0
+<img loading="lazy" src="/assets/images/photo_2024-05-22_14-32-17-1ffad803829dde1c2f026af1b0d498c1.jpg" width="1280" height="960" class="img_ev3q"></p><p><img loading="lazy" src="/assets/images/photo_2024-05-22_14-32-00-04075e5e0fd72426321912d917086840.jpg" width="960" height="1280" class="img_ev3q"></p><p><img loading="lazy" src="/assets/images/photo_2024-05-22_14-31-56-16f2e664c0383d438416f8f0fa933cfe.jpg" width="960" height="1280" class="img_ev3q"></p><p><img loading="lazy" src="/assets/images/photo_2024-05-22_14-31-32-a81084055d5efdbd7470acc74eadb641.jpg" width="1280" height="960" class="img_ev3q"></p>]]></content>
+        <author>
+            <name>dmn</name>
+            <uri>https://github.com/dmnovikov</uri>
+        </author>
+        <category label="modbus" term="modbus"/>
+        <category label="nnzipc" term="nnzipc"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Замеры скоростей WiFi6]]></title>
         <id>https://lab240.github.io/blog/wifi6</id>

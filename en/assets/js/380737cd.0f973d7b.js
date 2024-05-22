@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklab_240=self.webpackChunklab_240||[]).push([[4022],{7034:a=>{a.exports=JSON.parse('{"label":"nnzipc","permalink":"/en/blog/tags/nnzipc","allTagsPath":"/en/blog/tags","count":1}')}}]);

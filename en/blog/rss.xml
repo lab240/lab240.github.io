@@ -22,6 +22,18 @@
             <category>nnzipc</category>
         </item>
         <item>
+            <title><![CDATA[Сборщик-компакт на выставке ЦОД]]></title>
+            <link>https://lab240.github.io/en/blog/elemy-exebition</link>
+            <guid>https://lab240.github.io/en/blog/elemy-exebition</guid>
+            <pubDate>Mon, 20 May 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Наше устройство на выставке]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="наше-устройство-на-выставке">Наше устройство на выставке<a href="#наше-устройство-на-выставке" class="hash-link" aria-label="Direct link to Наше устройство на выставке" title="Direct link to Наше устройство на выставке">​</a></h2><blockquote><p>Видео-демонстрация возможностей  анализа данных с устройств
+<a href="https://youtu.be/2gW4XfBO398" target="_blank" rel="noopener noreferrer">https://youtu.be/2gW4XfBO398</a></p></blockquote><p>На выставке по ЦОД мы работаем совместно с замечательными продуктами наших партнёров ELEMY. </p><p><img loading="lazy" src="/en/assets/images/photo_2024-05-22_15-02-29-ac87bd3f7be2680bf8ea140e99d15211.jpg" width="822" height="1280" class="img_ev3q"></p><p><img loading="lazy" src="/en/assets/images/photo_2024-05-22_15-02-11-arrow-3db2bd1bd367f789d7f030ac9f81b80e.jpg" width="960" height="1280" class="img_ev3q"></p><p><img loading="lazy" src="/en/assets/images/photo_2024-05-22_15-02-02-728a7d219fbe0b36e1f527afbdcb2c23.jpg" width="960" height="1280" class="img_ev3q"></p><p>Сборщик  по SNMP собирает статистику с устройств (ATS-1204, ATS-1205, CCU-002, PDU-1502) в стойке. На выставочном компьютере запущена Grafana с отображением статистики и состояний не только текущих данных со всех устройств стойки, но статистики за любой период наблюдения (т.к. Сборщик всю информацию хранит в базе данных).</p>]]></content:encoded>
+            <category>fcc</category>
+            <category>nnzipc</category>
+            <category>elemy</category>
+        </item>
+        <item>
             <title><![CDATA[Замеры скоростей WiFi6]]></title>
             <link>https://lab240.github.io/en/blog/wifi6</link>
             <guid>https://lab240.github.io/en/blog/wifi6</guid>

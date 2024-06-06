@@ -2,11 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lab240.github.io/blog</id>
     <title>Lab240 Blog</title>
-    <updated>2024-05-22T00:00:00.000Z</updated>
+    <updated>2024-06-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lab240.github.io/blog"/>
     <subtitle>Lab240 Blog</subtitle>
     <icon>https://lab240.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Палата  питания для Embedded устройств]]></title>
+        <id>https://lab240.github.io/blog/power-plate</id>
+        <link href="https://lab240.github.io/blog/power-plate"/>
+        <updated>2024-06-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Плата питания для Embedded устройств]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="плата-питания-для-embedded-устройств">Плата питания для Embedded устройств<a href="#плата-питания-для-embedded-устройств" class="hash-link" aria-label="Прямая ссылка на Плата питания для Embedded устройств" title="Прямая ссылка на Плата питания для Embedded устройств">​</a></h2><p>Мы решили унифицировать питание для наших устройств и разработали плату питания, учитывая все возможные ньюансы (в частости, доступность компонент и цена изделия). </p><ul><li>Вход 10-60в DC (постоянное напряжение) либо PoE  802.3at</li><li>Вход переключается DC-POE, DC в приоритете </li><li>Выход 5в 2-2.5А</li></ul><blockquote><p>Наконец-то мы поддерживаем POE  802.3at с автоматическим определением источника </p></blockquote><p><img loading="lazy" src="/assets/images/2024-06-06_18-08-06b28c2ef68ca81af9f23ec210c158e2.jpg" width="584" height="358" class="img_ev3q"></p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="размер">Размер<a href="#размер" class="hash-link" aria-label="Прямая ссылка на Размер" title="Прямая ссылка на Размер">​</a></h2><p>Компактный размер</p><p><img loading="lazy" src="/assets/images/2024-06-06_18-22-1c0ca8b147498237b6cc83a368b52227.jpg" width="494" height="442" class="img_ev3q"></p><p>Вертикальное расположение платы должно экономить размер головного устройства !</p><p><img loading="lazy" src="/assets/images/2024-06-06_18-22_1-396d24e9a8de5560bf1790866120a56b.jpg" width="661" height="444" class="img_ev3q"></p><p>В настоящее время мы проводим испытание на нагрузку и нагрев и скоро эта плата
+станет частью нашего Сборщик-Универсала.</p>]]></content>
+        <author>
+            <name>dmn</name>
+            <uri>https://github.com/dmnovikov</uri>
+        </author>
+        <category label="modbus" term="modbus"/>
+        <category label="nnzipc" term="nnzipc"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Стенд ModBus 2]]></title>
         <id>https://lab240.github.io/blog/modbus-stand-2</id>

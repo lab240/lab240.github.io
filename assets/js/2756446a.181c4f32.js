@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunklab_240=self.webpackChunklab_240||[]).push([[1519],{7151:a=>{a.exports=JSON.parse('{"label":"fcc","permalink":"/blog/tags/fcc","allTagsPath":"/blog/tags","count":1}')}}]);

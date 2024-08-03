@@ -1,0 +1,1 @@
+(self.webpackChunklab_240=self.webpackChunklab_240||[]).push([[5741],{5741:()=>{}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunklab_240=self.webpackChunklab_240||[]).push([[7030],{8013:a=>{a.exports=JSON.parse('{"label":"modbus","permalink":"/blog/tags/modbus","allTagsPath":"/blog/tags","count":2}')}}]);

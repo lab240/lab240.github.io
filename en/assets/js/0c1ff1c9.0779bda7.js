@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunklab_240=self.webpackChunklab_240||[]).push([[9606],{6518:a=>{a.exports=JSON.parse('{"label":"CPU","permalink":"/en/blog/tags/cpu","allTagsPath":"/en/blog/tags","count":1}')}}]);

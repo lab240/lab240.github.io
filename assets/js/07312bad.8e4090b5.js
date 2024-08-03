@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunklab_240=self.webpackChunklab_240||[]).push([[8653],{4776:l=>{l.exports=JSON.parse('{"label":"frontcontrol","permalink":"/blog/tags/frontcontrol","allTagsPath":"/blog/tags","count":4}')}}]);

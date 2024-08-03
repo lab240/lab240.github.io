@@ -14,7 +14,7 @@ tags: [team, lab240]
 
 Про то, как мы быстро сделали систему визуализации работы ПДУ
 
-## Предистория
+## Предыстория
 
 Есть такой известный бренд в мире управления питанием для стоек в дата центрах - Raritan. Маститый вендор, предоставляющий софт с кучей аналитики по работе оборудования. А есть молодой производитель Elemy, у которого есть веб-интерфейс для просмотра текущих параметров, но нет аналитики. Для начала мы взяли устройство ["АВТОМАТИЧЕСКИЙ СТОЕЧНЫЙ ПЕРЕКЛЮЧАТЕЛЬ
 ATS-1204"](https://www.elemy.ru/products/ats-1204).
@@ -31,11 +31,11 @@ ATS-1204"](https://www.elemy.ru/products/ats-1204).
 
 :::tip
 
-Докер для Win: <https://www.docker.com/products/docker-desktop/>
+Докер для Windows: [https://www.docker.com/products/docker-desktop/](https://www.docker.com/products/docker-desktop/)
 
 :::
 
-Наш готовый докер с инструкцией по разворачиванию  <https://gitlab.nnz-ipc.net/iot/grafana-influx>
+Наш готовый докер с инструкцией по разворачиванию [https://gitlab.nnz-ipc.net/iot/grafana-influx](https://gitlab.nnz-ipc.net/iot/grafana-influx)
 
 ## Конфиг telegraf
 
@@ -69,12 +69,12 @@ Telegraf - мощнейшее средство перекладывания да
   ]
 ```
 
-В приемнике (на выход) - никаких изменений (приемник - база influxv2)
+В приемнике (на выход) - никаких изменений (приемник - база influx_v2)
 
 ```toml
 
 [[outputs.influxdb_v2]]
-  
+
   urls = ["http://mon_influxdb2:8086"]
   token = "INFLUXDB TOKEN"
   bucket = "bucket1"
@@ -83,9 +83,9 @@ Telegraf - мощнейшее средство перекладывания да
 
 ```
 
-## Дашбоард для grafana
+## Дашборд для grafana
 
-> [Cкачать json c дашбоард для  Elemy ATS-1204](./files/ATS-1204-1692355913043.json)
+> [Скачать json c дашбоард для  Elemy ATS-1204](./files/ATS-1204-1692355913043.json)
 
 :::tip
 

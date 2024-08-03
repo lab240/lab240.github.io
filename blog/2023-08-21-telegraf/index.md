@@ -5,14 +5,14 @@ authors: dmn
 tags: [team, lab240]
 ---
 
-## Предисловие. О Telegraf.
+## Предисловие. О Telegraf
 
 Telegraf универсальный инструмент перекладывания данных от источников данных к приемникам данных. Классическим источником данных являются протоколы опроса датчиков, такие как modbus\mqtt, а классическим приемником данных являются базы данных (influxdb, mysql). Наличие сотен плагинов для Telegraf освобождает нас от написания микросервисов по перекладыванию данных, а применять один инструмент.
 
 :::tip
 
-- Ссылка на Telegraf: <https://www.influxdata.com/time-series-platform/telegraf/>
-- Ссылка на плагины Telegraf: <https://docs.influxdata.com/telegraf/v1.26/plugins/>
+- Ссылка на Telegraf: [https://www.influxdata.com/time-series-platform/telegraf/](https://www.influxdata.com/time-series-platform/telegraf/)
+- Ссылка на плагины Telegraf: [https://docs.influxdata.com/telegraf/v1.26/plugins/](https://docs.influxdata.com/telegraf/v1.26/plugins/)
 
 :::
 
@@ -32,7 +32,7 @@ Modbus TCP
   slave_id = 4
   timeout = "3s"
 
-  controller = "tcp://127.0.0.1:502" 
+  controller = "tcp://127.0.0.1:502"
 
   holding_registers = [
     { name = "elemy_binary1", byte_order = "AB",   data_type = "UINT16", scale=1.0,  address = [0]},
@@ -87,8 +87,8 @@ MQTT Config (на примере платформы donoff)
 
   data_format = "value"
   data_type = "string"
-  
-  
+
+
 [[inputs.mqtt_consumer.topic_parsing]]
     topic = "/donoff/+/out/sensors/+"
     tags = "/prj/dev/_/_/_"
@@ -112,7 +112,7 @@ MQTT Config (на примере платформы donoff)
 
 :::tip
 
-Описание языка Starlark: <https://github.com/bazelbuild/starlark/blob/master/spec.md>
+Описание языка Starlark: [https://github.com/bazelbuild/starlark/blob/master/spec.md](https://github.com/bazelbuild/starlark/blob/master/spec.md)
 
 :::
 
@@ -125,10 +125,10 @@ MQTT Config (на примере платформы donoff)
   source = '''
 def apply(metric):
 
-  #Разбор поля с названием сенсора 
+  #Разбор поля с названием сенсора
 
   sm=str(metric.fields['sensor_name'])
- 
+
   #Можно "пропустить" данные которые не нужны
 
   if sm == 'pzem004':
@@ -157,9 +157,9 @@ def apply(metric):
     metric.fields['type']='volt'
   else:
     metric.fields['type']='undef'
-    
-  #Убираем лишние метрики    
-  
+
+  #Убираем лишние метрики
+
   metric.fields.pop('value')
   metric.tags.pop('topic')
   metric.fields.pop('sensor_name')
@@ -186,7 +186,7 @@ def apply(metric):
 
   source = '''
 def apply(metric):
-  
+
   ei=metric.fields['elemy_binary1']
 
   # Готовим массив из 16 значений
@@ -194,28 +194,28 @@ def apply(metric):
   bit_array=[None]*16
 
   # Берем входящее значение и раскладываем каждый бит в элементы массива
-  
+
   for i in range(0,16):
    bit_array[i]=(ei>>i) & 1
 
   # Формируем метрики на основе битов (некоторые метрики multi_bit) согласно документации на устройство
 
   metric.fields['priority']=bit_array[1]+2*bit_array[0]
-  
-  
+
+
   metric.fields['switch_mode']=bit_array[2]
-  
+
   metric.fields['is_input1_norm_state']=bit_array[8]
   metric.fields['is_input2_norm_state']=bit_array[9]
-  
+
   metric.fields['is_input1_active']=bit_array[10]
   metric.fields['is_input2_active']=bit_array[11]
-  
+
   metric.fields['load_state']=bit_array[13]+2*bit_array[12]
-  
+
   metric.fields['is_out_voltage1']=bit_array[14]
   metric.fields['is_out_voltage2']=bit_array[15]
-    
+
   return metric
 '''
 ```

@@ -2,11 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lab240.github.io/en/blog</id>
     <title>Lab240 Blog</title>
-    <updated>2024-06-05T00:00:00.000Z</updated>
+    <updated>2024-09-11T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lab240.github.io/en/blog"/>
     <subtitle>Lab240 Blog</subtitle>
     <icon>https://lab240.github.io/en/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Принудительное управление маршрутами в BATMAN]]></title>
+        <id>https://lab240.github.io/en/blog/batman-ctl</id>
+        <link href="https://lab240.github.io/en/blog/batman-ctl"/>
+        <updated>2024-09-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Наш отчет по управлению маршрутами BATMAN-а на платформе NXP LX2160. Задача стояла научиться превентивно указывать BATMAN вес маршрутов. Это нужно для наших проектов с 10Гбит релейками, где интерфейс релейки все время 10Гбит, а фактическая скорость работы релейки приходит как параметр по SNMP.]]></summary>
+        <content type="html"><![CDATA[<p>Наш отчет по управлению маршрутами BATMAN-а на платформе NXP LX2160. Задача стояла научиться превентивно указывать BATMAN вес маршрутов. Это нужно для наших проектов с 10Гбит релейками, где интерфейс релейки все время 10Гбит, а фактическая скорость работы релейки приходит как параметр по SNMP.</p>
+<p>Будет интересно тем, кто интересуется MESH-сетями и протоколом BATMAN</p>
+<blockquote>
+<p>🔥<!-- --> <a href="https://lab240.notion.site/lx2160-BATMAN-58a7a29812354aa8ac9d023f8816bfdb" target="_blank" rel="noopener noreferrer">https://lab240.notion.site/lx2160-BATMAN-58a7a29812354aa8ac9d023f8816bfdb</a></p>
+</blockquote>]]></content>
+        <author>
+            <name>dmn</name>
+            <uri>https://github.com/dmnovikov</uri>
+        </author>
+        <category label="batman" term="batman"/>
+        <category label="fleapath" term="fleapath"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Палата  питания для Embedded устройств]]></title>
         <id>https://lab240.github.io/en/blog/power-plate</id>
@@ -133,7 +151,7 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="ноутбук-под-управлением-archlinux-с-картой-intel-ax210">Ноутбук под управлением ArchLinux с картой Intel AX210<a class="hash-link" aria-label="Direct link to Ноутбук под управлением ArchLinux с картой Intel AX210" title="Direct link to Ноутбук под управлением ArchLinux с картой Intel AX210" href="https://lab240.github.io/en/blog/wifi6#%D0%BD%D0%BE%D1%83%D1%82%D0%B1%D1%83%D0%BA-%D0%BF%D0%BE%D0%B4-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC-archlinux-%D1%81-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D0%B9-intel-ax210">​</a></h3>
 <p>Была куплена карта Intel AX210 (2,4G/5G/6G) с поддержкой 6Ггц изъята из "компьютерного" корпуса и засунута в ноутбук HP.</p>
 <p><img decoding="async" loading="lazy" alt="Alt text" src="https://lab240.github.io/en/assets/images/intel-ax-210-909ea7568a777d1594d7805ebc3f2451.jpg" width="343" height="247" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="компьютер-под-управлением-opensuse-с-китайской-картой--на-чипе-intel-ax210">Компьютер под управлением OpenSuse с китайской картой  на чипе Intel AX210<a class="hash-link" aria-label="Direct link to Компьютер под управлением OpenSuse с китайской картой  на чипе Intel AX210" title="Direct link to Компьютер под управлением OpenSuse с китайской картой  на чипе Intel AX210" href="https://lab240.github.io/en/blog/wifi6#%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-%D0%BF%D0%BE%D0%B4-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC-opensuse-%D1%81-%D0%BA%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B9-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D0%B9--%D0%BD%D0%B0-%D1%87%D0%B8%D0%BF%D0%B5-intel-ax210">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="компьютер-под-управлением-opensuse-с-китайской-картой--на-чипе-intel-ax210">Компьютер под управлением OpenSuse с китайской картой  на чипе Intel AX210<a class="hash-link" aria-label="Direct link to Компьютер под управлением OpenSuse с китайской картой  на чипе Intel AX210" title="Direct link to Компьютер под управлением OpenSuse с китайской картой  на чипе Intel AX210" href="https://lab240.github.io/en/blog/wifi6#%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80-%D0%BF%D0%BE%D0%B4-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC-opensuse-%D1%81-%EF%BF%BD%D0%BA%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D0%BA%D0%BE%D0%B9-%D0%BA%D0%B0%D1%80%D1%82%D0%BE%D0%B9--%D0%BD%D0%B0-%D1%87%D0%B8%D0%BF%D0%B5-intel-ax210">​</a></h3>
 <p>Карта была куплена на AliExpress и как есть вставлена в материнскую плату компьютера.</p>
 <p><img decoding="async" loading="lazy" alt="Alt text" src="https://lab240.github.io/en/assets/images/intel-ax-210-comp-4fd7ec5e75343f2f8aedf2a31a409f04.jpg" width="253" height="374" class="img_ev3q"></p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="ноутбук-под-у-управлением-ubuntu-2204-c-карта-ethernet-25гбит">Ноутбук под у управлением Ubuntu 22.04 c карта Ethernet 2.5Гбит<a class="hash-link" aria-label="Direct link to Ноутбук под у управлением Ubuntu 22.04 c карта Ethernet 2.5Гбит" title="Direct link to Ноутбук под у управлением Ubuntu 22.04 c карта Ethernet 2.5Гбит" href="https://lab240.github.io/en/blog/wifi6#%D0%BD%D0%BE%D1%83%D1%82%D0%B1%D1%83%D0%BA-%D0%BF%D0%BE%D0%B4-%D1%83-%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC-ubuntu-2204-c-%D0%BA%D0%B0%D1%80%D1%82%D0%B0-ethernet-25%D0%B3%D0%B1%D0%B8%D1%82">​</a></h3>
@@ -778,7 +796,7 @@ ATS-1204"</a>.</p>
 <li><a href="https://dokltd.ru/data/files/docs/dok-train-to-ground-ppc-10gbit.pdf" target="_blank" rel="noopener noreferrer">Описание Радио-мостов "поезд-земля (pdf)"</a> на сайте dokltd.ru</li>
 </ul></div></div>
 <p>В своих разработках мы подразумеваем современный поезд, который движется на высоких скоростях (до 300км\ч).</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="передача-данных-земля-поезд">Передача данных "земля-поезд"<a class="hash-link" aria-label="Direct link to Передача данных &quot;земля-поезд&quot;" title="Direct link to Передача данных &quot;земля-поезд&quot;" href="https://lab240.github.io/en/blog/dmn-prj-fleapath-1#%D0%BF%EF%BF%BD%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B7%D0%B5%D0%BC%D0%BB%D1%8F-%D0%BF%D0%BE%D0%B5%D0%B7%D0%B4">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="передача-данных-земля-поезд">Передача данных "земля-поезд"<a class="hash-link" aria-label="Direct link to Передача данных &quot;земля-поезд&quot;" title="Direct link to Передача данных &quot;земля-поезд&quot;" href="https://lab240.github.io/en/blog/dmn-prj-fleapath-1#%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D0%B7%D0%B5%D0%BC%D0%BB%D1%8F-%D0%BF%D0%BE%D0%B5%D0%B7%D0%B4">​</a></h2>
 <p>💥<!-- --> Термин РРС расшифровывается как <strong>Радио-Релейная Станция</strong>.</p>
 <p>Суть технологии передачи данных "земля-поезд" в том, что на поезде стоит радио-релейное оборудование (РРС), которое "смотрит" вперед и назад. В каждый момент
 времени мы "видим" и "теряем" базовые станции впереди поезда и сзади поезда и необходимо переключать путь прохождения трафика между парами РРС. Путь прохождения трафика (здесь и далее <strong>ППТра</strong>) - путь, образованный парой РРС на базе (столбе) и на поезде (на носу или кормовой части).</p>

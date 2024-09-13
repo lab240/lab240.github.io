@@ -2,11 +2,49 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lab240.github.io/blog</id>
     <title>Lab240 Blog</title>
-    <updated>2024-09-11T00:00:00.000Z</updated>
+    <updated>2024-09-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lab240.github.io/blog"/>
     <subtitle>Lab240 Blog</subtitle>
     <icon>https://lab240.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Сборщик универсал 2.0]]></title>
+        <id>https://lab240.github.io/blog/fcu-1</id>
+        <link href="https://lab240.github.io/blog/fcu-1"/>
+        <updated>2024-09-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[На сайте napiworld.ru мы сделали первый обзор нашего Сборщика-Универсал]]></summary>
+        <content type="html"><![CDATA[<p>На сайте napiworld.ru мы сделали первый обзор нашего Сборщика-Универсал</p>
+<p><img decoding="async" loading="lazy" src="https://lab240.github.io/assets/images/fcu4-4-582398b999539959b8dc93d565d45324.jpg" width="516" height="532" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="почему-этот-пре-релиз-для-нас-важен">Почему этот пре-релиз для нас важен.<a class="hash-link" aria-label="Прямая ссылка на Почему этот пре-релиз для нас важен." title="Прямая ссылка на Почему этот пре-релиз для нас важен." href="https://lab240.github.io/blog/fcu-1#%D0%BF%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D1%8D%D1%82%D0%BE%D1%82-%D0%BF%D1%80%D0%B5-%D1%80%D0%B5%D0%BB%D0%B8%D0%B7-%D0%B4%D0%BB%D1%8F-%D0%BD%D0%B0%D1%81-%D0%B2%D0%B0%D0%B6%D0%B5%D0%BD">​</a></h2>
+<ol>
+<li>
+<p>Это устройство на нашем компактном SOM Napi Slot. Надеемся, что на этом SOM будут не только наши устройства и нам было важно выпустить свое устройство с лучшими практиками.</p>
+</li>
+<li>
+<p>Это устройство с нашей универсальной платой питания DC \ POE, про которую мы уже писали. И ее тоже важно было применить в разработке.</p>
+</li>
+<li>
+<p>Это устройство с нашим модулем расширения не только под USB, но и под UART и  I2C.</p>
+</li>
+<li>
+<p>Это устройство c микроконтроллером, где мы реализуем WatchDOG и другие интересные функции.</p>
+</li>
+</ol>
+<blockquote>
+<p>🔥<!-- --> <a href="https://napiworld.ru/blog/dmn-fcu-first-view" target="_blank" rel="noopener noreferrer">https://napiworld.ru/blog/dmn-fcu-first-view</a></p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="другие-ссылки">Другие ссылки<a class="hash-link" aria-label="Прямая ссылка на Другие ссылки" title="Прямая ссылка на Другие ссылки" href="https://lab240.github.io/blog/fcu-1#%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D0%B5-%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B8">​</a></h2>
+<blockquote>
+<p>☝<!-- --> Документация по Napi Slot: <a href="https://napiworld.ru/docs/napi-som-intro" target="_blank" rel="noopener noreferrer">https://napiworld.ru/docs/napi-som-intro</a> <br>
+<!-- -->☝<!-- --> <a href="https://lab240.github.io/blog/power-plate">Аннонс</a> про плату питания.</p>
+</blockquote>]]></content>
+        <author>
+            <name>dmn</name>
+            <uri>https://github.com/dmnovikov</uri>
+        </author>
+        <category label="fcu" term="fcu"/>
+        <category label="napi" term="napi"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Принудительное управление маршрутами в BATMAN]]></title>
         <id>https://lab240.github.io/blog/batman-ctl</id>
@@ -169,7 +207,7 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="первый-тест-разминка-wifi5-5ггц">Первый тест "Разминка". WiFi5 5Ггц.<a class="hash-link" aria-label="Прямая ссылка на Первый тест &quot;Разминка&quot;. WiFi5 5Ггц." title="Прямая ссылка на Первый тест &quot;Разминка&quot;. WiFi5 5Ггц." href="https://lab240.github.io/blog/wifi6#%D0%BF%D0%B5%D1%80%D0%B2%D1%8B%D0%B9-%D1%82%D0%B5%D1%81%D1%82-%D1%80%D0%B0%D0%B7%D0%BC%D0%B8%D0%BD%D0%BA%D0%B0-wifi5-5%D0%B3%D0%B3%D1%86">​</a></h2>
 <p>Для начала был проведен мини тест на WiFi5 (5.2ГГц), который сразу показал очень низкую скорость. Надо признаться, что эфир на 5Ггц у нас в БЦ довольно "захламлен", оптимизаций каналов не проводилось, потому что основной интерес лежал в области WiFi6.</p>
 <p><img decoding="async" loading="lazy" alt="Alt text" src="https://lab240.github.io/assets/images/schm1-f8395edd9599e6fd2d498e733ca6ec4d.jpg" width="508" height="293" class="img_ev3q"></p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="результаты-1">Результаты-1<a class="hash-link" aria-label="Прямая ссылка на Результаты-1" title="Прямая ссылка на Результаты-1" href="https://lab240.github.io/blog/wifi6#%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D1%8B-1">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="результаты-1">Результаты-1<a class="hash-link" aria-label="Прямая ссылка �на Результаты-1" title="Прямая ссылка на Результаты-1" href="https://lab240.github.io/blog/wifi6#%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D1%8B-1">​</a></h3>
 <ul>
 <li>iperf3 один поток и 8 потоков</li>
 </ul>
